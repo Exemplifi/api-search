@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "best_matches": [
+    {
+      "task_id": "pay-utility-bill",
+      "phrase": "Pay My Utility Bill",
+      "subtext": "Go to this page to pay your utility bill",
+      "url": "https://www.fayettecountyga.gov/pay-utility-bill",
+      "similarity_score": 0.8756896830512437
+    },
+    {
+      "task_id": "land-records",
+      "phrase": "Land Records Search",
+      "subtext": "Search and view land records and property information",
+      "url": "https://www.fayettecountyga.gov/land-records",
+      "similarity_score": 0.8234567890123456
+    },
+    {
+      "task_id": "vehicle-registration",
+      "phrase": "Vehicle Registration",
+      "subtext": "Register your vehicle or renew registration",
+      "url": "https://www.fayettecountyga.gov/vehicle-registration",
+      "similarity_score": 0.7890123456789012
+    },
+    {
+      "task_id": "property-tax",
+      "phrase": "Property Tax Information",
+      "subtext": "View and pay property taxes",
+      "url": "https://www.fayettecountyga.gov/property-tax",
+      "similarity_score": 0.7567890123456789
+    }
+  ]
+}
