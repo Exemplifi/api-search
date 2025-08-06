@@ -6,17 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>API Search</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 
 <body>
   <div class="search-container">
     <div class="search-wrapper">
-      <input type="text" id="search-input" class="search-input" placeholder="Search for services..." autocomplete="off">
+      <div class="search-input-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Search for services..." autocomplete="off">
+        <i data-lucide="search" class="search-icon"></i>
+      </div>
       <div id="search-dropdown" class="search-dropdown"></div>
     </div>
   </div>
 
   <script src="assets/scripts.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
 </body>
 
 </html>

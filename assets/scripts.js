@@ -32,7 +32,7 @@ class SearchInterface {
     } else if (this.lastResults.length > 0) {
       // Restore previous results
       this.displayResults(this.lastResults, this.lastQuery);
-    } else if (query.length >= 3) {
+    } else if (query.length >= 1) {
       // Re-search if we have a query but no results
       this.performSearch(query);
     } else {
@@ -69,8 +69,8 @@ class SearchInterface {
       return;
     }
 
-    // Hide dropdown if query is too short
-    if (query.length < 3) {
+    // Hide dropdown if query is empty
+    if (query.length < 1) {
       this.lastQuery = "";
       this.lastResults = [];
       this.hideDropdown();
@@ -80,7 +80,7 @@ class SearchInterface {
     // Debounce API call
     this.debounceTimer = setTimeout(() => {
       this.performSearch(query);
-    }, 1000);
+    }, 300);
   }
 
   async performSearch(query) {
