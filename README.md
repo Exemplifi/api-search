@@ -1,15 +1,15 @@
 # Fayette County AI Search
 
-A modern, responsive search interface that provides intelligent search results for Fayette County government services. The application features real-time search with debounced API calls, keyboard navigation, and a clean, accessible user interface.
+A modern, responsive search interface that provides intelligent search results for Fayette County government services. The application features real-time search with debounced API calls, keyboard navigation, and a clean, accessible user interface with a magnifying glass icon.
 
 ## Features
 
-- **Real-time Search**: As-you-type search with 1-second debouncing
-- **Keyboard Navigation**: Use arrow keys to navigate results, Enter to select, Escape to close
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Accessibility**: Full keyboard support and screen reader friendly
-- **Modern UI**: Clean, dark theme with smooth animations
-- **External Links**: Results open in new tabs for seamless browsing
+- 🔍 **Real-time Search**: As-you-type search with 1-second debouncing
+- ⌨️ **Keyboard Navigation**: Use arrow keys to navigate results, Enter to select, Escape to close
+- 📱 **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- ♿ **Accessibility**: Full keyboard support and screen reader friendly
+- 🎨 **Modern UI**: Clean, dark theme with smooth animations and search icon
+- 🔗 **External Links**: Results open in new tabs for seamless browsing
 
 ## How It Works
 
@@ -25,6 +25,7 @@ A modern, responsive search interface that provides intelligent search results f
 - **Frontend**: Vanilla JavaScript with ES6+ features
 - **Styling**: CSS3 with responsive breakpoints
 - **Data**: JSON-based API response structure
+- **Icons**: Lucide icons via CDN for search interface
 - **No Dependencies**: Pure HTML, CSS, and JavaScript
 
 ### Key Components
@@ -32,7 +33,7 @@ A modern, responsive search interface that provides intelligent search results f
 #### SearchInterface Class
 
 - Handles all search functionality and user interactions
-- Implements debouncing for API calls (1000ms delay)
+- Implements debouncing for API calls (300ms delay)
 - Manages keyboard navigation and selection states
 - Provides loading states and error handling
 
@@ -55,7 +56,7 @@ A modern, responsive search interface that provides intelligent search results f
 
 ### Search Logic
 
-- Minimum 3 characters required to trigger search
+- Minimum 1 character required to trigger search
 - Case-insensitive matching on phrase and subtext
 - Results filtered client-side for performance
 - Previous results cached for better UX
@@ -75,7 +76,7 @@ api-search/
 ## Usage
 
 1. Open `index.html` in a web browser
-2. Type your search query (minimum 3 characters)
+2. Type your search query (minimum 1 character)
 3. Use arrow keys to navigate results
 4. Click or press Enter to open selected result
 5. Press Escape to close the dropdown
